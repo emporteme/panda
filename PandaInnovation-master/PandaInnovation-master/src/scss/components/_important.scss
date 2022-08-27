@@ -1,0 +1,42 @@
+@import "../variables";
+
+.important {
+    background: url('../../assets/img/bgsupport.svg');
+    background-repeat: no-repeat;
+    margin-top: 120px;
+    // @media screen and (max-width: 780px) {
+    //     margin-top: 10px;
+    // }
+    &__cont{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-text{
+            font-family: 'Montserrat';
+            font-weight: 400;
+            width: 315px;
+            font-size: $h3;
+            text-align: center;
+            font-variant: small-caps;
+
+            @media screen and (max-width: 1024px) {
+                width: 400px;
+            }
+            @media screen and (max-width: 780px) {
+                width: 310px;
+            }
+
+            color: #181818;
+            p {
+            
+                margin: 0;
+
+             span {
+                font-weight: 600;
+            }
+        }
+        }
+    }
+}
