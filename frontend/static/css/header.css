@@ -1,0 +1,93 @@
+.header {
+    color: #FFF;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 90px;
+    cursor: pointer;
+}
+
+.header__logo p {
+    font-size: 1.602rem;
+    line-height: 30px;
+    font-family: "K2D";
+}
+
+.header__logo span {
+    font-size: 0.889rem;
+    letter-spacing: 29%;
+}
+
+.header__about ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header__about ul li {
+    font-family: "Mulish";
+    font-size: 0.79rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+@media screen and (max-width: 640px) {
+    .header__about {
+        display: none;
+    }
+}
+
+.header .blur {
+    position: absolute;
+    width: 1076px;
+    height: 506px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.26) 0%, rgba(217, 217, 217, 0) 100%);
+    filter: blur(50px);
+    left: 150px;
+    top: -150px;
+    z-index: -99;
+}
+
+@media screen and (max-width: 780px) {
+    .header .btn {
+        display: none;
+    }
+}
+
+.header .btn-phone {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid;
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .header .btn-phone {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header .btn-phone {
+        display: none;
+    }
+}
+
+.header__burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .header__burger {
+        display: block;
+    }
+}

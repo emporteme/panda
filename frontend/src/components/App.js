@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import HomePage from "./HomePage";
 import RoomJoinPage from "./RoomJoinPage";
-
+import Header from "./Header.jsx";
+import '../../static/css/App.css'
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -35,7 +36,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <HomePage />
+        <Header />
+       
         <ul>
         {this.state.data.map(contact => {
           return (
