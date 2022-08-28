@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../assets/img/bgfooter.svg'
+import img from '../../../static/assets/img/bgfooter.svg'
     
 const FooterContainer = styled.div`
     padding-bottom:30px;

@@ -1,7 +1,7 @@
 import React from "react";
-import { casesList } from "../assets/data/casesList";
-import photoFoody from "../assets/img/photoFoody.svg";
-import swipe from "../assets/img/swipeWhite.svg";
+import { casesList } from "../../static/assets/data/casesList.js";
+import photoFoody from "../../static/assets/img/photoFoody.svg";
+import swipe from "../../static/assets/img/swipeWhite.svg";
 import '../../static/css/cases.css'
 
 const Cases = () => {

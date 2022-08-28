@@ -1,8 +1,8 @@
 import React from "react";
-import astanaHub from "../assets/img/astanaHub.svg";
-import terricon from "../assets/img/terriconValley.svg";
-import theBrain from "../assets/img/theBrain.svg";
-import house16 from "../assets/img/house16.svg";
+import astanaHub from "../../static/assets/img/astanaHub.svg";
+import terricon from "../../static/assets/img/terriconValley.svg";
+import theBrain from "../../static/assets/img/theBrain.svg";
+import house16 from "../../static/assets/img/house16.svg";
 import '../../static/css/support.css'
 
 

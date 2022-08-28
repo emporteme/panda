@@ -1,6 +1,6 @@
 import React from "react";
-import { productsList } from "../assets/data/productList";
-import swipe from "../assets/img/swipe.svg";
+import { productsList } from "../../static/assets/data/productList.js";
+import swipe from "../../static/assets/img/swipe.svg";
 import '../../static/css/products.css'
 
 const Products = () => {

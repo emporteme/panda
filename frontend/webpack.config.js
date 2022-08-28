@@ -50,9 +50,13 @@ module.exports = {
   optimization: {
     minimize: true,
   },
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV' : JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production')
     })
   ],
 };

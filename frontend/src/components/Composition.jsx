@@ -1,5 +1,5 @@
 import React from "react";
-import panda from "../assets/img/panda.svg";
+import panda from "../../static/assets/img/panda.svg";
 import '../../static/css/composition.css'
 
 
