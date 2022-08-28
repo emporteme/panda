@@ -1,0 +1,36 @@
+.follow {
+    display: none;
+}
+
+.follow__cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow__cont p {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 0.889rem;
+    text-align: center;
+    color: #FFF;
+    width: 300px;
+}
+
+.follow__cont-social {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.follow__cont-social svg {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+    .follow {
+        display: block;
+    }
+}

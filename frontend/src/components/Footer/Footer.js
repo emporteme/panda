@@ -1,5 +1,4 @@
 import React from "react";
-
 import allInOne from "./Footer.style";
 const { FooterContainer, Service, Contact, Contact__info } = allInOne;
 

@@ -2,7 +2,7 @@ import React from "react";
 import { casesList } from "../assets/data/casesList";
 import photoFoody from "../assets/img/photoFoody.svg";
 import swipe from "../assets/img/swipeWhite.svg";
-
+import '../../static/css/cases.css'
 
 const Cases = () => {
   const [leftCircle, setLeftCircle] = React.useState(false);

@@ -3,6 +3,8 @@ import astanaHub from "../assets/img/astanaHub.svg";
 import terricon from "../assets/img/terriconValley.svg";
 import theBrain from "../assets/img/theBrain.svg";
 import house16 from "../assets/img/house16.svg";
+import '../../static/css/support.css'
+
 
 const Support = () => {
   return (

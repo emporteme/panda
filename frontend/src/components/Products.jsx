@@ -1,7 +1,7 @@
 import React from "react";
 import { productsList } from "../assets/data/productList";
-
 import swipe from "../assets/img/swipe.svg";
+import '../../static/css/products.css'
 
 const Products = () => {
   const [leftCircle, setLeftCircle] = React.useState(false);

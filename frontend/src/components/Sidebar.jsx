@@ -1,4 +1,6 @@
 import React from "react";
+import '../../static/css/sidebar.css'
+
 
 // import insta from "../assets/img/instagram.svg";
 // import telegram from "../assets/img/telegram.svg";

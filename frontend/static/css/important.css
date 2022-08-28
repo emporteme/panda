@@ -1,0 +1,41 @@
+.important {
+  background: url("../assets/img/bgsupport.svg");
+  background-repeat: no-repeat;
+  margin-top: 120px;
+}
+
+.important__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.important__cont-text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  width: 315px;
+  font-size: 1.125rem;
+  text-align: center;
+  font-variant: small-caps;
+  color: #181818;
+}
+
+@media screen and (max-width: 1024px) {
+  .important__cont-text {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .important__cont-text {
+    width: 310px;
+  }
+}
+
+.important__cont-text p {
+  margin: 0;
+}
+
+.important__cont-text p span {
+  font-weight: 600;
+}

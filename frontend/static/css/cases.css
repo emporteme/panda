@@ -1,0 +1,113 @@
+.cases {
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 780px) {
+    .cases {
+        margin-top: 130px;
+    }
+}
+
+.cases__info {
+    display: flex;
+}
+
+.cases__info-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.cases__info-btns svg {
+    margin: 20px 13px;
+}
+
+@media screen and (max-width: 640px) {
+    .cases__info-btn {
+        display: none;
+    }
+}
+
+.cases__info-btn-swipe {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .cases__info-btn-swipe {
+        display: block !important;
+    }
+}
+
+.cases__info-text {
+    flex: 1;
+    font-size: 1.266rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+.cases__list {
+    display: flex;
+    gap: 10px;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+.cases__list::-webkit-scrollbar {
+    display: none;
+}
+
+.cases__card {
+    display: flex;
+    min-width: 625px;
+    min-height: 320px;
+    background-color: #fff;
+    border: 0.5px solid #E3E3E3;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 640px) {
+    .cases__card {
+        min-width: 520px;
+        min-height: 320px;
+    }
+}
+
+.cases__card-left {
+    padding-top: 10px;
+    flex: 2;
+}
+
+.cases__card-left-stack {
+    display: flex;
+}
+
+.cases__card-right {
+    padding-top: 10px;
+    flex: 1;
+}
+
+.cases__card-stack {
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cases__card-stack-block {
+    border-radius: 5px;
+    background-color: #4B5563;
+    color: #fff;
+    font-size: 0.79rem;
+    font-family: "Montserrat";
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.cases__card-text {
+    font-family: "Montserrat";
+    margin: 7px 0px 0px 22px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 0.79rem;
+}

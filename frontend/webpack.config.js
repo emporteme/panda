@@ -19,7 +19,32 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
-      }
+      },
+      {
+        //test: /\.(png|svg|jpg|gif|jpe?g)$/,
+        test: /\.(png|svg|jpg|gif|jpe?g)$/,
+        use: [
+          {
+            options: {
+              name: "[name].[ext]",
+              outputPath: "img/"
+            },
+            loader: "file-loader"
+          }
+        ]
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/"
+            }
+          }
+        ]
+      },
     ],
   },
   optimization: {
@@ -28,6 +53,6 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV' : JSON.stringify('production')
-  })
+    })
   ],
 };

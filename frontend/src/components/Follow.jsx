@@ -1,4 +1,6 @@
 import React from "react";
+import '../../static/css/follow.css'
+
 
 const Follow = () => {
   return (

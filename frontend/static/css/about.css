@@ -1,0 +1,133 @@
+
+.about {
+    margin-top: 70px;
+  }
+  @media screen and (max-width: 640px) {
+    .about {
+      background-image: url("../assets/img/check.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .about__main-text {
+    color: transparent;
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    -webkit-text-stroke: 1px white;
+    margin: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    .about__main-text {
+      font-size: 52px;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .about__main-text {
+      font-size: 45px;
+    }
+  }
+  .about__main-text-span {
+    background: -webkit-linear-gradient(#00D17F, #0BFA63);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: black;
+  }
+  @media screen and (max-width: 640px) {
+    .about__main {
+      display: none;
+    }
+  }
+  .about__btn {
+    display: none;
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 0.889rem;
+    color: #181818;
+  }
+  @media screen and (max-width: 640px) {
+    .about__btn {
+      display: block;
+      margin-top: 50px;
+    }
+  }
+  .about__container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .about__ears {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 1.266rem;
+  }
+  .about__ears-cont {
+    width: 648px;
+    text-align: center;
+  }
+  @media screen and (max-width: 1024px) {
+    .about__ears-cont {
+      width: 525px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .about__ears-cont {
+      width: 390px;
+    }
+  }
+  .about__ears-main {
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+  .about__ears-main p {
+    margin: 0;
+  }
+  @media screen and (max-width: 640px) {
+    .about__ears-main {
+      font-weight: 900;
+    }
+  }
+  .about__ears-text {
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+  .about__ears-text p {
+    margin: 0;
+  }
+  @media screen and (max-width: 640px) {
+    .about__ears-text {
+      font-weight: 500;
+    }
+  }
+  .about__ears-left {
+    transform: matrix(-0.85, 0.52, 0.52, 0.85, 0, 0);
+  }
+  .about__ears .ears {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 400px;
+    margin-left: 20px;
+  }
+  @media screen and (max-width: 1024px) {
+    .about__ears .ears {
+      gap: 370px;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .about__ears .ears {
+      gap: 330px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .about__ears .ears {
+      gap: 210px;
+    }
+  }

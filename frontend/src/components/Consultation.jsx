@@ -1,5 +1,6 @@
 import React from "react";
 import panda from "../assets/img/littlePanda.svg";
+import '../../static/css/consultation.css'
 
 const Consultation = () => {
   return (

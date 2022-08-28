@@ -1,4 +1,6 @@
 import React from "react";
+import '../../static/css/aboutPhone.css'
+
 
 const AboutPhone = () => {
   return (

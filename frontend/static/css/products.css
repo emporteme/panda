@@ -1,0 +1,121 @@
+.products {
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+    .products {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .products {
+        margin-top: 180px;
+    }
+}
+
+.products__info {
+    display: flex;
+}
+
+.products__info-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.products__info-btns svg {
+    margin: 20px 13px;
+}
+
+@media screen and (max-width: 640px) {
+    .products__info-btn {
+        display: none;
+    }
+}
+
+.products__info-btn-swipe {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .products__info-btn-swipe {
+        display: block !important;
+    }
+}
+
+.products__info-text {
+    flex: 1;
+    font-size: 1.266rem;
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 700;
+}
+
+.products__list {
+    display: flex;
+    gap: 20px;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+.products__list::-webkit-scrollbar {
+    display: none;
+}
+
+.products__card {
+    min-width: 252px;
+    min-height: 252px;
+    background-color: #9CA3AF;
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px #18202F, inset 4px 4px 10px rgba(255, 255, 255, 0.3);
+    border: 0.3px solid #5E6673;
+}
+
+@media screen and (max-width: 640px) {
+    .products__card {
+        min-height: 180px;
+    }
+}
+
+.products__card-img {
+    margin: 22px 0px 0px 22px;
+}
+
+@media screen and (max-width: 640px) {
+    .products__card-img {
+        display: none;
+    }
+}
+
+.products__card-title {
+    font-family: "Montserrat";
+    margin: 5px 0px 0px 22px;
+    color: #FFF;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.products__card-title p {
+    margin: 0;
+}
+
+.products__card-text {
+    font-family: "Montserrat";
+    margin: 7px 0px 0px 22px;
+    color: #FFF;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 0.79rem;
+}
+
+.products__card-text p {
+    margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .products__card-text {
+        font-size: 0.889rem;
+    }
+}

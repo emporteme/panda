@@ -1,4 +1,5 @@
 import React from "react";
+import '../../static/css/team.css'
 
 const Team = () => {
   return (

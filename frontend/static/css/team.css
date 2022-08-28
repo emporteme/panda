@@ -1,0 +1,90 @@
+.team {
+    margin-top: 70px;
+}
+
+.team__cont {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.team__cont-info {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 1.266rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.team__cont-circles {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: -40px;
+}
+
+.team__cont-circles-circle {
+    width: 180px;
+    height: 180px;
+    background: #606060;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+    .team__cont-circles-circle {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .team__cont-circles-circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.team__cont-circles-up {
+    display: flex;
+    justify-content: center;
+}
+
+.team__cont-circles-up .team__cont-circles-cont {
+    flex: 1;
+}
+
+.team__cont-circles-up .team__cont-circles-cont p,
+.team__cont-circles-up .team__cont-circles-cont span {
+    align-items: center;
+}
+
+.team__cont-circles-down {
+    display: flex;
+}
+
+.team__cont-circles-down .team__cont-circles-cont {
+    flex: 1;
+}
+
+.team__cont-circles p {
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin: 0;
+}
+
+.team__cont-circles-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__cont-full {
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    align-self: flex-end;
+}

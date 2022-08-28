@@ -1,0 +1,27 @@
+.aboutPhone {
+    display: none;
+    margin-top: 50px;
+}
+
+.aboutPhone__main-text {
+    margin: 0;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 33.64px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.aboutPhone__main-text-span {
+    color: rgb(103, 236, 103);
+    font-family: "Mulish";
+    font-weight: 900;
+}
+
+@media screen and (max-width: 640px) {
+    .aboutPhone {
+        display: block;
+    }
+}
