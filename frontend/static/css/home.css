@@ -16,8 +16,8 @@ html {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
-  background-image: url(../assets/img/background.svg);
+  background-color: rgb(212, 40, 40);
+  background-image: url(../../static/assets/img/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -4,7 +4,7 @@
   }
   @media screen and (max-width: 640px) {
     .about {
-      background-image: url("../assets/img/check.svg");
+      background-image: url("../../static/assets/img/check.svg");
       background-repeat: no-repeat;
       background-size: cover;
     }

@@ -1,33 +1,62 @@
-import React from "react";
-import { casesList } from "../../static/assets/data/casesList.js";
-import photoFoody from "../../static/assets/img/photoFoody.svg";
+import React, { Component } from "react";
+import Stack from "./Stack.jsx";
+//import { casesList } from "../../static/assets/data/casesList.js";
+//import photoFoody from "../../static/assets/img/photoFoody.svg";
 import swipe from "../../static/assets/img/swipeWhite.svg";
 import '../../static/css/cases.css'
 
-const Cases = () => {
-  const [leftCircle, setLeftCircle] = React.useState(false);
-  const [rightCircle, setRightCircle] = React.useState(true);
-
-  const scrollRef = React.useRef(null);
-
-  const scroll = (move) => {
-    scrollRef.current.scrollLeft += move;
-
-    // console.log(Math.round(scrollRef.current.scrollLeft));
+export default class Cases extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      loaded: false,
+      placeholder: "Loading"
+    };
+  }
+  componentDidMount() {
+    fetch("api/case")
+      .then(response => {
+        if (response.status > 400) {
+          return this.setState(() => {
+            return { placeholder: "Something went wrong!" };
+          });
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.setState(() => {
+          return {
+            data,
+            loaded: true
+          };
+        });
+      });
+  }
+  Cases = () => {
+    const [leftCircle, setLeftCircle] = React.useState(false);
+    const [rightCircle, setRightCircle] = React.useState(true);
+  
+    const scrollRef = React.useRef(null);
+  
+    const scroll = (move) => {
+      scrollRef.current.scrollLeft += move;
+  
+      // console.log(Math.round(scrollRef.current.scrollLeft));
+    };
   };
-
-  return (
-    <div className="cases">
-      <div className="wrapper">
-
-      <div className="cases__info">
-        <h1 className="cases__info-text">Свежие кейсы: </h1>
-        <div className="cases__info-btn">
+  render() {
+    return (
+      <div className="cases">
+        <div className="wrapper">
+          <div className="cases__info">
+            <h1 className="cases__info-text">Свежие кейсы: </h1>
+            <div className="cases__info-btn">
           <div
             className={`cases__info-btns btn-circle${
-              leftCircle ? " btn-active" : ""
+              Cases.leftCircle ? " btn-active" : ""
             }`}
-            onClick={() => scroll(-630)}
+            onClick={() => Cases.scroll(-630)}
           >
             <svg
               width="25"
@@ -45,9 +74,9 @@ const Cases = () => {
 
           <div
             className={`cases__info-btns btn-circle${
-              rightCircle ? " btn-active" : ""
+              Cases.rightCircle ? " btn-active" : ""
             }`}
-            onClick={() => scroll(630)}
+            onClick={() => Cases.scroll(630)}
           >
             <svg
               width="30"
@@ -70,38 +99,33 @@ const Cases = () => {
             </svg>
           </div>
         </div>
-
-        <div className="cases__info-btn-swipe">
-          <img src={swipe} alt="" />
-        </div>
-      </div>
-      
-
-      <div className="cases__list" ref={scrollRef}>
-        {casesList.map((product) => (
-          <div className="cases__card">
-            <div className="cases__card-left">
-              <div className="cases__card-logo">{product.logo}</div>
-              <div className="cases__card-text">
-                <p>{product.text}</p>
-              </div>
-              <div className="cases__card-stack">
-                {product.stack.map((stack) => (
-                  <div className="cases__card-stack-block">{stack}</div>
-                ))}
-              </div>
-            </div>
-
-            <div className="cases__card-right">
-              <img src={photoFoody} alt="" />
+            <div className="cases__info-btn-swipe">
+              <img src={swipe} alt="" />
             </div>
           </div>
-        ))}
-      </div>
+          <div className="cases__list" ref={Cases.scrollRef}>
+            {this.state.data.map(cases => {
+              return (
+                <div key={cases.id} className="cases__card">
+                  <div className="cases__card-left">
+                    <div className="cases__card-logo"><img src={cases.logo} alt="" /></div>
+                    <div className="cases__card-text">
+                      <p>{cases.text}</p>
+                    </div>
+                    <div>
+                      <Stack/>
+                    </div>
+                  </div>
+                  <div className="cases__card-right">
+                    <img src={cases.image} alt="" />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
 
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 };
-
-export default Cases;

@@ -12,3 +12,4 @@ urlpatterns = [
 ]
 
 #ImgListCreate
+#<div className="cases__card-stack-block">{stack}</div>
