@@ -16,38 +16,9 @@ import Footer from "./Footer/Footer.js";
 import Follow from "./Follow.jsx";
 import '../../static/css/App.css'
 import '../../static/css/home.css'
-
-
-
+import Products from "./Products.jsx";
+import Cases from "./Cases.jsx";
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: [],
-      loaded: false,
-      placeholder: "Loading"
-    };
-  }
-  componentDidMount() {
-    fetch("api/navbar")
-      .then(response => {
-        if (response.status > 400) {
-          return this.setState(() => {
-            return { placeholder: "Something went wrong!" };
-          });
-        }
-        return response.json();
-      })
-      .then(data => {
-        this.setState(() => {
-          return {
-            data,
-            loaded: true
-          };
-        });
-      });
-  }
-
   render() {
     return (
       <div>
@@ -60,17 +31,15 @@ export default class App extends Component {
           </div>
         </div>
         <About />
-        
+        <Products />
         <Record />
-
+        <Cases />
         <Important />
         <Support />
-        <Team/>
+        <Team />
         <Follow />
         <Consultation />
         <Footer />
-
-
       </div>
     );
   }

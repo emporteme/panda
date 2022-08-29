@@ -1,3 +1,4 @@
+import React from "react";
 export const casesList = [
   {
     id: 0,
