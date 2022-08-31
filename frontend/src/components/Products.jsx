@@ -40,6 +40,7 @@ export default class Products extends Component {
     const scrollRef = React.useRef(null);
     const scroll = (move) => {
       scrollRef.current.scrollLeft += move;
+      console.log(Math.round(scrollRef.current.scrollLeft));
     };
   }
   render() {

@@ -31,6 +31,9 @@ class Case(models.Model):
 
 
 class Stack(models.Model):
+    case = models.ForeignKey(Case,
+                                 related_name='stacks',
+                                 on_delete=models.CASCADE)
     text = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
 

@@ -26,7 +26,7 @@ class CaseSerializer(serializers.ModelSerializer):
 class StackSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stack
-        fields = ('id', 'text')
+        fields = ('id', 'text', 'case')
 class SupportSerializer(serializers.ModelSerializer):
     class Meta:
         model = Support
